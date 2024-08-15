@@ -15,7 +15,7 @@ spec:
         app: otus-homework
     spec:
       containers:
-      - name: health-app
+      - name: homework
         image: olegmeditskiy96/spring-boot-homework:1.0
         ports:
           - containerPort: 8000
