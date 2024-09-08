@@ -1,4 +1,4 @@
-##### Установка сикрета
+##### Установка secret
 kubectl apply -f .\hw-3\manifests\secret.yaml
 
 ##### Установка базы данных
