@@ -8,3 +8,5 @@ helm install otus-hw-3-postgresql oci://registry-1.docker.io/bitnamicharts/postg
 kubectl apply -f .\hw-3\manifests
 
 Коллекция запросо приложена в otus-homework.postman_collection.json
+
+![screenshot](newman-result.jpg)
