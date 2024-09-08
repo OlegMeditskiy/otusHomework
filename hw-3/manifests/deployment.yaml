@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: otus-homework-deployment
+  labels:
+    app: otus-homework
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: otus-homework
+  template:
+    metadata:
+      labels:
+        app: otus-homework
+    spec:
+      containers:
+        - name: homework
+          image: olegmeditskiy96/hw-3:1.2
+          ports:
+            - containerPort: 8000
+          env:
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                configMapKeyRef:
+                  name: otus-homework-cm
+                  key: username
+            - name: SPRING_DATASOURCE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: otus-homework-cm
+                  key: url
+            - name: SPRING_APPLICATION_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: otus-homework-cm
+                  key: applicationName
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: otus-homework-secret
+                  key: password
+          volumeMounts:
+            - name: config
+              mountPath: "/config"
+              readOnly: true
+      volumes:
+        - name: config
+
+
+
+

@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: otus-homework-cm
+data:
+  username: 'otus-hw-3'
+  url: 'jdbc:postgresql://otus-hw-3-postgresql.default.svc.cluster.local:5432/postgres?prepareThreshold=0'
+  applicationName: 'otus-hw-3'

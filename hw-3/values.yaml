@@ -1,0 +1,9 @@
+global:
+  postgresql:
+    auth:
+      username: "otus-hw-3"
+      existingSecret: "otus-homework-secret"
+      secretKeys:
+        userPasswordKey: "password"
+auth:
+  enablePostgresUser: false

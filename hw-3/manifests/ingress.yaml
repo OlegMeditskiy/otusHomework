@@ -18,10 +18,10 @@ spec:
                 name: otus-homework-service
                 port:
                   number: 80
-          - path: /otusapp/(.*)/(.*)
-            pathType: ImplementationSpecific
-            backend:
-              service:
-                name: otus-homework-service
-                port:
-                  number: 80
+#          - path: /otusapp/(.*)/(.*)
+#            pathType: ImplementationSpecific
+#            backend:
+#              service:
+#                name: otus-homework-service
+#                port:
+#                  number: 80
