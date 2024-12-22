@@ -1,0 +1,11 @@
+global:
+  postgresql:
+    auth:
+      username: "otus-hw-7"
+      existingSecret: "otus-homework-secret"
+      secretKeys:
+        userPasswordKey: "password"
+auth:
+  enablePostgresUser: false
+persistence:
+  enabled: false
