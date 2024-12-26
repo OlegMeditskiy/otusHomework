@@ -14,4 +14,4 @@ exit
 ##### Установка оставшихся манифестов
 kubectl apply -f .\hw-8\manifests --recursive
 
-Коллекция запросов приложена в [hw-8.postman_collection](hw-8.postman_collection)
+Коллекция запросов приложена в [hw-8_postman_collection.json](hw-8_postman_collection.json)[hw-8.postman_collection](hw-8.postman_collection)
