@@ -1,0 +1,12 @@
+extraScrapeConfigs: |
+  - job_name: 'applications'
+    scrape_interval: 30s
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets:
+        - auth-service
+        - billing-service
+        - order-service
+        - delivery-service
+        - stock-service
+        - notification-service

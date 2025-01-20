@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  
+  name: kafka-cm
+data:
+  kafka-host: kafka-service:9092
