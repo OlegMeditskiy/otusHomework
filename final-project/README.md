@@ -31,4 +31,4 @@ exit
 ##### Установка оставшихся манифестов
 kubectl apply -f ./final-project/manifests --recursive
 
-Коллекция запросов приложена в 
+Коллекция запросов приложена в [final-project.postman_collection.json](final-project.postman_collection.json)

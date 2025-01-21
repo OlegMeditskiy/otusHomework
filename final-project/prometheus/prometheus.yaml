@@ -10,3 +10,4 @@ extraScrapeConfigs: |
         - delivery-service
         - stock-service
         - notification-service
+        - apigateway-service
