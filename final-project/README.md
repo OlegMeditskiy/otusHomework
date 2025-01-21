@@ -32,3 +32,6 @@ exit
 kubectl apply -f ./final-project/manifests --recursive
 
 Коллекция запросов приложена в [final-project.postman_collection.json](final-project.postman_collection.json)
+
+Пример метрик, можно выбирать любой сервис
+![Пример метрик.png](%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%20%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D0%BA.png)
