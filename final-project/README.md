@@ -12,7 +12,7 @@ helm install grafana grafana/grafana
 kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
 Если нужно проверить графану
 kubectl port-forward service/grafana 3000:80
-Доступ к prometheus по http://prometheus-server:9090
+Доступ к prometheus по http://prometheus-server:80
 id дашбордов для создания - 19004
 
 ##### Установка secret перед базой данных
