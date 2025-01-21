@@ -41,7 +41,7 @@ spec:
     spec:
       containers:
         - name: order
-          image: olegmeditskiy96/otus-final-order:1.0
+          image: olegmeditskiy96/otus-final-order:1.1
           ports:
             - containerPort: 8000
           env:
