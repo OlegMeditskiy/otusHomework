@@ -41,7 +41,7 @@ spec:
     spec:
       containers:
         - name: stock
-          image: olegmeditskiy96/otus-final-stock:1.0
+          image: olegmeditskiy96/otus-final-stock:1.6
           ports:
             - containerPort: 8000
           env:

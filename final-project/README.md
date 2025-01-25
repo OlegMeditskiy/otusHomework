@@ -28,7 +28,7 @@ kubectl exec -it deployment/kafka-deployment -- /bin/bash
 kafka-topics --create --topic order-command --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 && kafka-topics --create --topic users --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
 exit
 
-##### Установка оставшихся манифестов
+##### Установка оставшихся манифестов`
 kubectl apply -f ./final-project/manifests --recursive
 
 Коллекция запросов приложена в [final-project.postman_collection.json](final-project.postman_collection.json)
